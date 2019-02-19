@@ -1,0 +1,25 @@
+{
+  "name": "protractor-tinkering",
+  "version": "1.0.0",
+  "description": "Toying with protractor customization with locators, methods, etc...",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor protractor.conf.js"
+  },
+  "keywords": [
+    "protractor",
+    "custom",
+    "tinkering",
+    "typeScript"
+  ],
+  "author": "winify",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.0",
+    "@types/jasminewd2": "^2.0.6",
+    "jasmine": "^3.3.0",
+    "protractor": "^5.4.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  }
+}
