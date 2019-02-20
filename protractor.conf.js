@@ -21,10 +21,6 @@ exports.config = {
         browser.waitForAngularEnabled(false);
         browser
             .manage()
-            .timeouts()
-            .implicitlyWait(3000);
-        browser
-            .manage()
             .window()
             .setSize(1920, 1080);
     }
