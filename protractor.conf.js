@@ -3,17 +3,19 @@ const tsNode = require('ts-node');
 const path = require('path');
 
 exports.config = {
+
+    chromeDriver: path.resolve(process.env['ChromeWebDriver'] + '/chromedriver.exe'),
+
     framework: 'jasmine',
 
     capabilities: {
         browserName: 'chrome'
     },
 
-    seleniumAddress: "http://localhost:4444/wd/hub",
-
     specs: ['specs/**/*.spec.ts'],
 
     onPrepare: () => {
+        require('dotenv').config();
         tsNode.register({project: path.resolve(path.join(__dirname, './tsconfig.json'))});
 
         browser.waitForAngularEnabled(false);
