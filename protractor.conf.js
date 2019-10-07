@@ -15,7 +15,6 @@ exports.config = {
     specs: ['specs/**/*.spec.ts'],
 
     onPrepare: () => {
-        require('dotenv').config();
         tsNode.register({project: path.resolve(path.join(__dirname, './tsconfig.json'))});
 
         browser.waitForAngularEnabled(false);
