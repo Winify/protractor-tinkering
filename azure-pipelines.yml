@@ -20,6 +20,10 @@ steps:
   displayName: 'npm install'
 
 - script: |
+    echo $ChromeWebDriver
+  displayName: 'check chromedriver version'
+
+- script: |
     npm test
-  displayName: 'npm test'
+  displayName: 'npm test -- --capabilities.chromeOptions.binary="$ChromeWebDriver"'
 
