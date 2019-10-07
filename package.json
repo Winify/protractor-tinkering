@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "webdriver-manager update",
-    "test": "protractor protractor.conf.js"
+    "test": "protractor protractor.conf.js",
+    "ci": "npm run test"
   },
   "keywords": [
     "protractor",
