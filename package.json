@@ -4,6 +4,7 @@
   "description": "Toying with protractor customization with locators, methods, etc...",
   "main": "index.js",
   "scripts": {
+    "pretest": "webdriver-manager update",
     "test": "protractor protractor.conf.js"
   },
   "keywords": [
