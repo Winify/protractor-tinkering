@@ -18,6 +18,8 @@ steps:
 - script: npm install
   displayName: 'npm install'
 
-- powershell: npm test -- --capabilities.chromeOptions.binary="$(ChromeWebDriver)\chromedriver.exe"
-  displayName: 'npm test -- --capabilities.chromeOptions.binary="$(ChromeWebDriver)"'
+- powershell: docker run -d -p 4444:4444 selenium/standalone-chrome
+  displayName: 'run docker standalone chrome server'
 
+- powershell: npm test
+  displayName: 'npm test'

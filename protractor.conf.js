@@ -9,7 +9,7 @@ exports.config = {
         browserName: 'chrome'
     },
 
-    directConnect: true,
+    seleniumAddress: "http://localhost:4444/wd/hub",
 
     specs: ['specs/**/*.spec.ts'],
 
